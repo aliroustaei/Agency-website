@@ -1,0 +1,262 @@
+@font-face{
+    font-family:'shab';
+    src: url('../fonts/Shabnam.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none
+}
+ul{
+    list-style: none
+}
+h1,h2,h3{
+    font-family: 'shab';
+    color: #fff
+}
+p,a,.btn{
+    font-family: 'shab';
+    color: #f2f2f2
+}
+
+/********** navigation *************/
+nav{
+    background-image: linear-gradient(to right,#a517ba,#5f1782);
+}
+.navbar-brand img{
+    width: 100px;
+}
+.nav-item{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.nav-link{
+    color: #fff !important;
+    font-weight: 500;
+}
+.nav-link::after{
+    content: '';
+    height: 2px;
+    background: #fff;
+    display: block;
+    width: 0%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-link:hover::after{
+    width: 100%;
+    opacity: 1
+}
+.navbar-toggler{
+    outline: none !important;
+    border: none;
+}
+
+/************* banner **************/
+
+#banner{
+    background-image:  linear-gradient(to right,#a517ba,#5f1782);
+    padding-top: 5%;
+}
+.banner-t h1{
+    margin: 100px 0 20px;
+}
+.banner-t img{
+    width: 40px;
+    margin: 20px;
+}
+.banner-i img{
+    width: 100%;
+    animation: updown 3s infinite;
+}
+@keyframes updown{
+    50%{
+        transform: translateY(15px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+.banner-wave{
+    width: 100%
+}
+
+/************** service ********/
+#services{
+    padding: 80px 0;
+}
+.serv-h2{
+    color: #5f1782;
+    margin-bottom: 50px
+}
+.serv-h2::after{
+    content: '';
+    height: 5px;
+    width: 200px;
+    background-color: #7b1798;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 100%;    
+}
+.serv-item{
+    padding: 20px
+}
+.serv-item img{
+    width: 150px
+}
+.serv-item:hover img{
+    animation: updown 2s infinite;
+}
+.serv-item h3{
+    color: #22252e;
+    margin: 25px 0 10px;
+    font-size: 1.5rem
+}
+.serv-item p{
+    color: #777474;
+}
+#services .btn{
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-image:  linear-gradient(to right,#a517ba,#5f1782);
+}
+
+/************ about us ************/
+
+#about-us{
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.about-item h3{
+    color: #22252e;
+    margin: 25px 0 15px;
+    font-size: 1.5rem
+}
+.about-item li:before{
+   content: '';
+   display: inline-block;
+   height: 15px;
+   width: 15px;
+   margin-left: 10px;
+   border-radius: 50%;
+   border: 2px solid #7b1798;
+}
+.about-item li{
+    font-family: 'shab';
+    margin: 5px 0;
+}
+.about-item img{
+    width: 80%;
+    padding: 20px 0;
+}
+
+/************ custumer ****************/
+
+#custumer{
+    padding: 80px 0;
+}
+.cust-item{
+    border-right: 5px solid #7b1798;
+    margin: 50px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+.cust-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.cust-item p {
+    color: #22252e;
+    font-size: 0.9rem;
+    width: 80%
+}
+.item-detials{
+    display: inline-block;
+    font-size: 12px;
+}
+
+/*************** social media *******************/
+
+#social{
+     padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.social p{
+    color: #22252e;
+    font-size: 22px
+}
+.social img{
+    width: 60px;
+    margin: 10px;
+    transition: 0.5s;
+}
+.social a:hover img{
+    transform: translateY(-10px);
+}
+
+/************** footer ****************/
+
+footer{
+    background-image:  linear-gradient(to right,#a517ba,#5f1782);
+}
+.footer-wave{
+    width: 100%
+}
+.footer-item img{
+    width: 150px;
+    margin-bottom: 10px
+}
+.footer-item p{
+    font-size: 0.9rem;    
+}
+.footer-item .fa{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.footer-item .btn{
+    border: 2px solid #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.footer-item .btn:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #7b1798;
+}
+.form-control{
+    max-width: 250px;
+    font-family: 'shab'
+}
+footer hr{
+    color: #fff;
+    opacity: 1
+}
+.copyright{
+    margin-bottom: 0px !important;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/****************/
+
+
+.alert-success{
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    font-family: "shab";
+    visibility: visible;
+    opacity: 1;
+    transition: ease-out 0.3s;
+}
+
+.alert-hide{
+    visibility: hidden;
+    opacity: 0;
+}
