@@ -7,6 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 a{
     text-decoration: none
 }
@@ -159,6 +163,7 @@ nav{
 
 #custumer{
     padding: 80px 0;
+    max-width: 100%;
 }
 .cust-item{
     border-right: 5px solid #7b1798;
@@ -199,6 +204,13 @@ nav{
 .social a:hover img{
     transform: translateY(-10px);
 }
+
+@media only screen and (max-width: 568px) {
+    .social img {
+        margin: 1px
+    } 
+}
+
 
 /************** footer ****************/
 
@@ -259,4 +271,12 @@ footer hr{
 .alert-hide{
     visibility: hidden;
     opacity: 0;
+}
+
+@media only screen and (max-width: 568px) {
+    .alert-success {
+        display: none;
+        visibility: hidden;
+        opacity: 0
+    }
 }
